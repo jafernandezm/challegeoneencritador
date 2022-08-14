@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #F3F5FC;
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,1fr);/*definimos el numero de columnas*/
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: "logo logo logo"
+                          "izquierda izquierda derecha"
+                          "boton1 boton2 derecha";
+    grid-template-rows: minmax(40px,auto) 90%;
+}
+.contenedor>div,
+.contenedor >input{
+    padding: 10px;
+    border-radius: 5%;
+    /*background: #FFFFFF;*/
+    /*para saber las pociones */
+}
+.contenedor .logo{
+    grid-area: logo;
+    width: 2.3%;
+    height: 4%;
+}
+.contenedor .logo >img{
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+
+.contenedor .izquierda{
+    grid-area: izquierda;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
+    width: 95%;
+}
+.izquierda .mensaje{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 85%;
+    height: 85%;
+    font-size: 22px;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    overflow: auto;
+    background: #F3F5FC;
+ 
+}
+.izquierda .restriciones{
+    margin-left: 10%;
+    margin-top: 1%;
+    font-size: bold;
+}
+
+.contenedor .derecha{
+    grid-area: derecha;
+    background: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.derecha #aviso{
+    display: inline-block;
+    height: 100%;
+    margin-top: 50%;
+    margin-left: 2%;
+}
+.derecha #menuResultado{
+    display: none;
+    height: 100%;
+}
+
+.derecha #imgDerecha{
+    width: 80%;
+    height: 30%;
+    margin-top: 10%;
+    margin-left: 2%;
+    display: inline-block;
+ }
+ .derecha #texto{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 25px;
+    height: 10%;
+ 
+ }
+ .derecha #resultado{
+    font-size: 22px;
+    font-style: normal;
+    color: #0A3871;
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: none;/*quitar bordes*/
+    outline: none;/*quitar negrita del borde*/
+    overflow: auto;
+ }
+ .derecha #copiar{
+    margin-top: 20%;
+    width: 80%;
+    border-radius: 24px;
+    height: 60px;
+}
+#menuResultado >input:hover{
+    background: #0A3871;
+}
+
+.contenedor .boton1,
+.contenedor .boton2{
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor .boton1{
+    grid-area: boton1;
+}
+.contenedor .boton2{
+    grid-area: boton2;
+}
+.boton1 .encriptar{
+    width: 80%;
+    height: 60%;
+    border-radius: 24px;
+}
+.boton2 .desencriptar{
+    width: 80%;
+    height: 60%;
+    border-radius: 24px;
+}
+.boton1 >input:hover,
+.boton2 >input:hover{
+    background: #0A3871;
+}
+@media screen and (max-width: 768px) {
+   .contenedor{
+    grid-template-columns: repeat(2,1fr);/*definimos el numero de columnas*/
+    grid-template-rows: repeat(2,auto); 
+    grid-template-areas:   "logo logo "
+                            "izquierda izquierda"
+                            "boton1 boton2"
+                            "derecha derecha";
+   }
+}
+
+@media (min-width:260px) and (max-width: 560px) {
+    .contenedor{
+     grid-template-columns: repeat(1,1fr);/*definimos el numero de columnas*/
+     grid-template-rows: repeat(5,auto);
+     grid-template-areas:   "logo  "
+                             "izquierda "
+                             "boton1 "
+                             "boton2"
+                             "derecha";
+    }
+ }
+
+
+
