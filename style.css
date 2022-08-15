@@ -187,7 +187,7 @@ body{
 
 @media (min-width:260px) and (max-width: 560px) {
     .contenedor{
-    width: 90%;
+    width: 95%;
     margin: 10px 10px;
     display: grid;
     grid-gap: 5px;
@@ -199,20 +199,26 @@ body{
                              "boton2"
                              "derecha";
     }   
+    
     .contenedor .boton1,
     .contenedor .boton2{
         text-align: center;
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
     .boton1 .encriptar{
-        width: 90%;
+        width: 100%;
         font-size: 35px;
     }
     .boton2 .desencriptar{
-        width: 90%;
+        width: 100%;
         font-size: 35px;
     }
-
+    .izquierda .mensaje{
+        font-size: 35px;
+    }
+    .derecha #resultado{
+        font-size: 35px;
+     }
  }
