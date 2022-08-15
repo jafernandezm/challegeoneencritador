@@ -193,7 +193,6 @@ body{
     .contenedor .boton2{
         text-align: center;
         display: flex;
-        background: wheat;
         justify-content: flex-start;
         align-items: flex-start;
     }
