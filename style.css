@@ -27,19 +27,29 @@ body{
     /*para saber las pociones */
 }
 .contenedor .header{
-    grid-area: header;
-    display: flex;
-    
+    grid-area: header; 
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-start;
 }
 .header .imgTitulo{ 
-    height: 50px;
-    width: 40px;
+    height: 40px;
+    width: 30px;
+    
 }
 .header .titulo{
-    margin-left: 10%;
     width: 60%;
-    font-size: 44px;
+    font-size: calc(3em)-10px;
     font-family: bold;
+    background: white;
+    margin-left: 20px;
+}
+#github{
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    left: 90%;
+    top: 5%;
 }
 
 .contenedor .izquierda{
