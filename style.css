@@ -115,7 +115,7 @@ body{
    
  }
  .derecha #copiar{
-    margin-top: 18%;
+    margin-top: 15%;
     width: 80%;
     height: 65px;
     border-radius: 24px;
@@ -200,7 +200,9 @@ body{
                              "boton2"
                              "derecha";
     }   
-    
+    .derecha #resultado{
+        height: 78%;
+     }
     .contenedor .boton1,
     .contenedor .boton2{
         text-align: center;
