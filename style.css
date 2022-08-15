@@ -73,44 +73,37 @@ body{
 
 .contenedor .derecha{
     grid-area: derecha;
-    background: #FFFFFF;
     text-align: center;
     justify-content: center;
     align-items: center;
-    justify-content: center;
-    height: 100%;
+    background: white;
 }
 .derecha #aviso{
-    display: inline-block;
-    height: 100%;
-    margin-top: 50%;
-    margin-left: 2%;
+    height: 950px;
 }
 .derecha #menuResultado{
     display: none;
-    height: 100%;
+    height: 950px;
 }
 
 .derecha #imgDerecha{
     width: 80%;
     height: 30%;
-    margin-top: 10%;
-    margin-left: 2%;
-    display: inline-block;
+    margin-top: 75%;
  }
  .derecha #texto{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 25px;
-    height: 10%;
- 
+    height: 10%; 
  }
  
  .derecha #resultado{
     font-size: 25px;
     font-style: normal;
     color: #0A3871;
-    height: 80%;
+    height: 90%;
     width: 80%;
     margin-left: 10%;
     margin-right: 20%;
@@ -118,17 +111,25 @@ body{
     border: none;/*quitar bordes*/
     outline: none;/*quitar negrita del borde*/
     overflow: hidden;
-
+    outline: transparent;
+   
  }
  .derecha #copiar{
-    margin-top: 20%;
+    margin-top: 18%;
     width: 80%;
+    height: 65px;
     border-radius: 24px;
-    height: 60px;
-    font-size: 25px;
+    font-size: 28px;
+    font-weight: 550;
 }
 #menuResultado >input:hover{
     background: #0A3871;
+}
+.derecha .textomsj{
+    font-size: 22px;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .contenedor .boton1,

@@ -11,10 +11,9 @@ const bttCopiar=document.getElementById('copiar');
 const bttEncritar=document.querySelector('.encriptar');
 const bttDesencritar=document.querySelector('.desencriptar');
 const ttMensajeResultado=document.getElementById('resultado');
-const comprobar=ttMensaje.value;
 function encritar(){
     mostrarResultado();
-    if(ttMensaje.value!="" && ttMensaje.value!=comprobar){
+    if(ttMensaje.value!=""){
     var mensaje=ttMensaje.value;
     var mensajeEncritado= mensaje
     .replaceAll("e","enter")
@@ -22,24 +21,16 @@ function encritar(){
     .replaceAll("a","ai")
     .replaceAll("o","ober")
     .replaceAll("u","ufat");
-    console.log(mensajeEncritado);
-    ttMensajeResultado.value="";
     ttMensajeResultado.value=mensajeEncritado;
     ttMensaje.value="";
-    ttMensaje.value="Ingrese el texto aqui";
     }
 }
 
-function mensajeTexto(){
-    if(comprobar==ttMensaje.value){
-    ttMensaje.value="";
-    }
-    return true;
-}
+
 
 function desencriptar(){
     mostrarResultado();
-    if(ttMensaje.value!="" && ttMensaje.value!=comprobar){
+    if(ttMensaje.value!=""){
     var mensajeEncritado=ttMensaje.value;
     var mensaje= mensajeEncritado
     .replaceAll( "enter","e")
@@ -49,7 +40,6 @@ function desencriptar(){
     .replaceAll("ufat","u");
     ttMensajeResultado.value=mensaje;
     ttMensaje.value="";
-    ttMensaje.value="Ingrese el texto aqui";
     }
 }
 
@@ -66,7 +56,7 @@ bttCopiar.addEventListener('click', e=>{
 
 bttEncritar.onclick=encritar;
 bttDesencritar.onclick=desencriptar;
-ttMensaje.onclick=mensajeTexto;
+
 
 
 
