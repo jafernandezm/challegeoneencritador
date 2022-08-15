@@ -38,18 +38,11 @@ body{
     
 }
 .header .titulo{
-    width: 60%;
-    font-size: calc(3em)-10px;
+    width: 50%;
+    font-size: calc(3em);
     font-family: bold;
     background: white;
     margin-left: 20px;
-}
-#github{
-    height: 40px;
-    width: 30px;
-    position: absolute;
-    left: 90%;
-    top: 5%;
 }
 
 .contenedor .izquierda{
