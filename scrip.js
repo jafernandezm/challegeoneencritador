@@ -31,7 +31,9 @@ function encritar(){
 }
 
 function mensajeTexto(){
+    if(comprobar==ttMensaje.value){
     ttMensaje.value="";
+    }
     return true;
 }
 
@@ -65,8 +67,6 @@ bttCopiar.addEventListener('click', e=>{
 bttEncritar.onclick=encritar;
 bttDesencritar.onclick=desencriptar;
 ttMensaje.onclick=mensajeTexto;
-
-
 
 
 
