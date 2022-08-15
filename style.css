@@ -41,7 +41,6 @@ body{
     width: 50%;
     font-size: calc(3em);
     font-family: bold;
-    background: white;
     margin-left: 20px;
 }
 
@@ -164,7 +163,18 @@ body{
 .boton2 >input:hover{
     background: #0A3871;
 }
-@media screen and (max-width: 768px) {
+@media (min-width:781px) and (max-width: 1000px) {
+    .header .titulo{
+        width: 50%;
+        font-size: 35px;
+        font-family: bold;
+        margin-left: 20px;
+    }
+ }
+
+
+
+@media screen and (max-width: 780px) {
    .contenedor{
     grid-template-columns: repeat(2,1fr);/*definimos el numero de columnas*/
     grid-template-rows: repeat(2,auto); 
