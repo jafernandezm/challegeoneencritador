@@ -216,9 +216,9 @@ body{
         font-size: 35px;
     }
     .izquierda .mensaje{
-        font-size: 35px;
+        font-size: 25px;
     }
     .derecha #resultado{
-        font-size: 35px;
+        font-size: 25px;
      }
  }
