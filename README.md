@@ -6,9 +6,13 @@ Creación de una pagina web que sea capaz de encriptar/desencriptar texto.
 
 ✅ Llaves de encriptacion:
 La letra "e" es convertida para "enter".
+
 La letra "i" es convertida para "imes".
+
 La letra "a" es convertida para "ai".
+
 La letra "o" es convertida para "ober".
+
 La letra "u" es convertida para "ufat".
 
 ✅ Requisitos:
@@ -21,7 +25,9 @@ desencriptado, y el usuario debe poder escoger entre as dos opciones.
 El resultado debe ser mostrado en la pantalla.
 
 ✅ Por ejemplo:
+
 gato ➡️ gaitober
+
 gaitober ➡️ gato
 
 ✅ Extras:
