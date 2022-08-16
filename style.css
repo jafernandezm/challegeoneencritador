@@ -8,6 +8,7 @@ body{
 }
 .contenedor{
     width: 90%;
+    height: auto;
     max-width: 1200px;
     margin: 20px auto;
     display: grid;
@@ -79,11 +80,11 @@ body{
     background: white;
 }
 .derecha #aviso{
-    height: 950px;
+    height: 700px;
 }
 .derecha #menuResultado{
     display: none;
-    height: 950px;
+    height: 700px;
 }
 
 .derecha #imgDerecha{
